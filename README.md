@@ -13,7 +13,22 @@ The apps read **https://hotdog-tv.github.io/hotdog-youtube/channels.json**. Only
 YouTube's Data API; the apps need no key and never call it. Videos play in YouTube's own embedded
 player (Android) or the YouTube app (Apple TV, desktop browser), never extracted.
 
-## Adding a channel
+## The channel editor
+
+Double-click **Edit Channels.bat** (in this folder, on the PC with the repo). It opens a page in
+your browser, served from that PC only:
+
+- paste a YouTube link (channel page, @handle or a live stream) and **Check**: it shows the
+  channel, what it has live, whether those streams may be embedded, and anything to watch for;
+  pick which stream it should show if it has several, choose a category and **Add**
+- every channel in the list with its live status: change category, ▲▼ order, **Edit** any field,
+  **Remove**; add, rename and remove categories
+- **Publish** commits `curated.json` and pushes it, which runs the job straight away
+
+It asks for the API key once and keeps it in `%APPDATA%\HotdogYouTube\key.txt`, never in the repo.
+Checks use the same daily quota as the job (3-5 units, ~100 more when a search is needed).
+
+## Adding a channel by hand
 
 Add a line to `curated.json`:
 

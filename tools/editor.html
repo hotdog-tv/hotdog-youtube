@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube Live Channels</title>
+<style>
+  :root { --bg:#0e1116; --panel:#171b22; --panel2:#1e232c; --line:#2a303a; --text:#e8eaed; --mid:#a0a6ad; --low:#6f7680;
+          --accent:#4f8cff; --live:#e5484d; --ok:#3fb950; --warn:#d29922; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:14px/1.45 system-ui, "Segoe UI", sans-serif; }
+  main { max-width:1100px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-weight:300; font-size:26px; margin:0; }
+  h2 { font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--mid); margin:28px 0 10px; }
+  .top { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .top .grow { flex:1; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  input, select { background:var(--panel2); color:var(--text); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font:inherit; }
+  input:focus, select:focus { outline:none; border-color:var(--accent); }
+  button { background:var(--panel2); color:var(--text); border:1px solid var(--line); border-radius:8px; padding:8px 14px; font:inherit; font-weight:600; cursor:pointer; }
+  button:hover { border-color:var(--accent); }
+  button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  button.danger:hover { border-color:var(--live); color:#ff8a8d; }
+  button.small { padding:4px 9px; font-weight:500; font-size:13px; }
+  button:disabled { opacity:.45; cursor:default; }
+  .row { display:flex; gap:10px; align-items:center; }
+  .row > input.grow { flex:1; }
+  .muted { color:var(--mid); } .low { color:var(--low); font-size:12px; }
+  .badge { font-size:11px; font-weight:700; padding:2px 7px; border-radius:6px; white-space:nowrap; }
+  .b-live { background:var(--live); color:#fff; } .b-off { background:var(--line); color:var(--mid); }
+  .b-warn { background:#4a3a10; color:#f0cc6e; } .b-ok { background:#173d22; color:#7ee08f; }
+  .changed { background:#3a2f0e; color:#f0cc6e; border:1px solid #5b4a12; padding:6px 10px; border-radius:8px; font-size:13px; }
+  .warn { background:#2c250f; border:1px solid #5b4a12; color:#f0cc6e; border-radius:8px; padding:8px 10px; margin:8px 0 0; }
+  .err { background:#2d1416; border:1px solid #6b2328; color:#ff9a9d; border-radius:8px; padding:8px 10px; margin-top:10px; }
+  .okmsg { background:#122a19; border:1px solid #23552f; color:#8ee59c; border-radius:8px; padding:8px 10px; margin-top:10px; }
+  .chan { display:flex; gap:14px; align-items:center; }
+  .chan img { width:56px; height:56px; border-radius:50%; background:var(--line); flex:none; object-fit:cover; }
+  .streams { margin-top:12px; display:flex; flex-direction:column; gap:6px; }
+  .stream { display:flex; gap:10px; align-items:center; background:var(--panel2); border:1px solid var(--line); border-radius:8px; padding:8px 10px; cursor:pointer; }
+  .stream img { width:96px; height:54px; border-radius:6px; object-fit:cover; flex:none; background:var(--line); }
+  .stream .t { flex:1; min-width:0; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:10px; margin-top:14px; }
+  .grid label { display:flex; flex-direction:column; gap:4px; font-size:12px; color:var(--mid); }
+  .list .cat { margin-top:18px; }
+  .item { display:flex; gap:10px; align-items:center; padding:8px 10px; border-radius:8px; }
+  .item:nth-child(odd) { background:rgba(255,255,255,.02); }
+  .item img { width:32px; height:32px; border-radius:50%; background:var(--line); flex:none; object-fit:cover; }
+  .item .t { flex:1; min-width:0; }
+  .item .t div { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .hidden { display:none !important; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <h1 class="grow">YouTube Live Channels</h1>
+    <span id="changed" class="changed hidden">Changes not published yet</span>
+    <button id="discard" class="danger hidden">Discard changes</button>
+    <button id="publish" class="primary" disabled>Publish</button>
+  </div>
+  <p class="muted">Paste a YouTube link to check it and add it. Changes are saved to curated.json here as you go; Publish sends them to GitHub, and the apps have them within a few minutes.</p>
+  <div id="pubmsg"></div>
+
+  <!-- First run: the API key -->
+  <div id="keypanel" class="panel hidden">
+    <b>YouTube API key</b>
+    <p class="muted">The same key as the repository's YOUTUBE_API_KEY secret. It's kept on this PC only (in your AppData folder), never in the repo.</p>
+    <div class="row"><input id="key" class="grow" type="password" placeholder="Paste the API key"><button id="savekey" class="primary">Save</button></div>
+    <div id="keymsg"></div>
+  </div>
+
+  <!-- Add a channel -->
+  <div id="addpanel" class="panel hidden">
+    <div class="row">
+      <input id="link" class="grow" placeholder="https://www.youtube.com/@SkyNews  ·  a live stream's link  ·  @handle">
+      <button id="check" class="primary">Check</button>
+    </div>
+    <div class="low" style="margin-top:6px">A check costs 3-5 units of the day's 10,000, or about 100 more when the channel has nothing in its latest uploads that's live.</div>
+    <div id="checkmsg"></div>
+    <div id="result" class="hidden" style="margin-top:16px"></div>
+  </div>
+
+  <h2>In the list</h2>
+  <div id="list" class="list panel"><span class="muted">Loading…</span></div>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+    else if (v !== undefined && v !== null && v !== false) e.setAttribute(k, v === true ? '' : v);
+  }
+  for (const k of kids.flat()) if (k !== null && k !== undefined && k !== false) e.append(k.nodeType ? k : String(k));
+  return e;
+};
+async function post(path, body) {
+  const r = await fetch(path, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Editor': '1' }, body: JSON.stringify(body || {}) });
+  return r.json();
+}
+function msg(target, text, kind = 'err') { const t = $(target); t.replaceChildren(text ? el('div', { class: kind }, text) : ''); }
+
+let curated = null, published = {}, result = null;
+
+async function load() {
+  const s = await (await fetch('/api/state')).json();
+  curated = s.curated;
+  $('#keypanel').classList.toggle('hidden', s.keySet);
+  $('#addpanel').classList.toggle('hidden', !s.keySet);
+  showChanged(s.changed);
+  renderList();
+  const p = await (await fetch('/api/published')).json();
+  published = {};
+  for (const c of (p.channels || [])) published[c.id] = c;
+  renderList();
+}
+function showChanged(changed) {
+  $('#changed').classList.toggle('hidden', !changed);
+  $('#discard').classList.toggle('hidden', !changed);
+  $('#publish').disabled = !changed;
+}
+async function save() {
+  const r = await post('/api/save', { curated });
+  if (!r.ok) { msg('#pubmsg', r.error); await load(); return; }
+  msg('#pubmsg', '');
+  showChanged(r.changed);
+  renderList();
+}
+
+// ── The list ──
+function renderList() {
+  const box = $('#list');
+  box.replaceChildren();
+  const catOptions = curated.categories.map(c => [c.id, c.name]);
+  for (const cat of curated.categories) {
+    const chans = curated.channels.filter(c => c.category === cat.id);
+    const head = el('div', { class: 'row', style: 'justify-content:space-between' },
+      el('h2', { style: 'margin:0' }, cat.name + ' · ' + chans.length),
+      el('span', {},
+        el('button', { class: 'small', onclick: () => renameCategory(cat) }, 'Rename'),
+        ' ',
+        chans.length === 0 ? el('button', { class: 'small danger', onclick: () => removeCategory(cat) }, 'Remove category') : null));
+    const sec = el('div', { class: 'cat' }, head);
+    if (chans.length === 0) sec.append(el('div', { class: 'low', style: 'padding:6px 10px' }, 'No channels'));
+    for (const c of chans) {
+      const p = published[c.id];
+      const live = p && p.live;
+      const status = !p ? el('span', { class: 'badge b-warn' }, 'NOT PUBLISHED')
+        : live ? el('span', { class: 'badge b-live' }, 'LIVE') : el('span', { class: 'badge b-off' }, 'OFF AIR');
+      const sel = el('select', { onchange: e => { c.category = e.target.value; save(); } },
+        ...catOptions.map(([id, name]) => el('option', { value: id, selected: id === c.category }, name)));
+      const all = curated.channels;
+      const idx = all.indexOf(c);
+      // Up / Down within its category
+      const prev = all.slice(0, idx).reverse().find(x => x.category === c.category);
+      const next = all.slice(idx + 1).find(x => x.category === c.category);
+      const swap = other => { const j = all.indexOf(other); [all[idx], all[j]] = [all[j], all[idx]]; save(); };
+      sec.append(el('div', { class: 'item' },
+        el('img', { src: (p && p.logo) || '', alt: '' }),
+        el('div', { class: 't' },
+          el('div', {}, el('b', {}, c.name), '  ', el('span', { class: 'low' }, c.handle || c.channelId), c.match ? el('span', { class: 'low' }, '  · title has: ' + c.match) : null),
+          el('div', { class: 'low' }, live ? live.title + (live.embeddable ? '' : ' · not embeddable') : (p ? 'Nothing live right now' : 'Publish to see what it has on'))),
+        status, sel,
+        el('button', { class: 'small', disabled: !prev, onclick: () => swap(prev) }, '▲'),
+        el('button', { class: 'small', disabled: !next, onclick: () => swap(next) }, '▼'),
+        el('button', { class: 'small', onclick: () => { editing = editing === c.id ? null : c.id; renderList(); } }, editing === c.id ? 'Close' : 'Edit'),
+        el('button', { class: 'small danger', onclick: () => { if (confirm(`Remove ${c.name}? Devices that added it lose it from their guide after you publish.`)) { curated.channels.splice(idx, 1); save(); } } }, 'Remove')));
+      if (editing === c.id) sec.append(editor(c));
+    }
+    box.append(sec);
+  }
+  box.append(el('div', { style: 'margin-top:16px' }, el('button', { class: 'small', onclick: addCategory }, '+ New category')));
+}
+// Every field of a channel's entry (empty = left out)
+let editing = null;
+const FIELDS = [
+  ['name', 'Name in the apps'], ['handle', 'Handle (@name)'], ['channelId', 'Channel id (UC...)'],
+  ['country', 'Country (2 letters)'], ['language', 'Language'], ['match', 'Stream title must have (pattern)'],
+  ['exclude', 'Stream title must not have (pattern)'], ['videoId', 'Prefer this stream (video id)'], ['logo', "Logo address (else YouTube’s)"],
+];
+function editor(c) {
+  const inputs = {};
+  const grid = el('div', { class: 'grid' },
+    el('label', {}, 'Id (fixed: devices know it by this)', el('input', { value: c.id, disabled: true })),
+    ...FIELDS.map(([k, label]) => el('label', {}, label, inputs[k] = el('input', { value: c[k] || '' }))));
+  const apply = () => {
+    if (!inputs.name.value.trim() || !inputs.channelId.value.trim()) { msg('#pubmsg', 'A channel needs a name and a channel id.'); return; }
+    for (const [k] of FIELDS) {
+      let v = inputs[k].value.trim();
+      if (k === 'country') v = v.toUpperCase();
+      if (v) c[k] = v; else delete c[k];
+    }
+    editing = null;
+    save();
+  };
+  return el('div', { class: 'panel', style: 'margin:4px 0 10px' }, grid,
+    el('div', { class: 'row', style: 'margin-top:12px' },
+      el('button', { class: 'primary', onclick: apply }, 'Save'),
+      el('button', { onclick: () => { editing = null; renderList(); } }, 'Cancel'),
+      el('span', { class: 'low' }, 'Patterns are case-insensitive regular expressions; plain words work as they are.')));
+}
+function addCategory() {
+  const name = prompt('New category name (as shown in the apps)');
+  if (!name || !name.trim()) return null;
+  let id = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'category';
+  while (curated.categories.some(c => c.id === id)) id += '-2';
+  curated.categories.push({ id, name: name.trim() });
+  save();
+  return id;
+}
+function renameCategory(cat) { const n = prompt('Category name', cat.name); if (n && n.trim()) { cat.name = n.trim(); save(); } }
+function removeCategory(cat) { curated.categories = curated.categories.filter(c => c !== cat); save(); }
+
+// ── Checking and adding ──
+async function doCheck() {
+  const link = $('#link').value.trim();
+  if (!link) return;
+  $('#check').disabled = true; $('#check').textContent = 'Checking…';
+  msg('#checkmsg', '');
+  $('#result').classList.add('hidden');
+  try {
+    result = await post('/api/check', { link });
+    if (!result.ok) { msg('#checkmsg', result.error); return; }
+    renderResult();
+  } finally { $('#check').disabled = false; $('#check').textContent = 'Check'; }
+}
+function renderResult() {
+  const r = result, ch = r.channel, box = $('#result');
+  box.replaceChildren();
+  box.classList.remove('hidden');
+  const usable = r.lives.some(v => v.embeddable && !v.ageRestricted);
+  box.append(el('div', { class: 'chan' },
+    el('img', { src: ch.logo, alt: '' }),
+    el('div', {},
+      el('div', { style: 'font-size:18px' }, el('b', {}, ch.title), '  ',
+        r.lives.length ? el('span', { class: 'badge ' + (usable ? 'b-ok' : 'b-warn') }, usable ? 'CAN BE EMBEDDED' : 'APP ONLY')
+                       : el('span', { class: 'badge b-off' }, 'NOTHING LIVE')),
+      el('div', { class: 'low' }, (ch.handle || '') + '  ' + ch.id + '  · ', el('a', { href: 'https://www.youtube.com/channel/' + ch.id + '/live', target: '_blank' }, 'open on YouTube')),
+      el('div', { class: 'low' }, `Checked with ${r.units} units`))));
+  for (const w of r.warnings) box.append(el('div', { class: 'warn' }, w));
+
+  // Which stream the channel shows (several live: most watched, or one by its title)
+  let choice = { match: '', videoId: '' };
+  if (r.lives.length) {
+    const streams = el('div', { class: 'streams' });
+    const opt = (label, sub, value, extra) => {
+      const radio = el('input', { type: 'radio', name: 'stream', checked: value === '' });
+      const row = el('label', { class: 'stream' }, radio, extra || null, el('div', { class: 't' }, el('div', {}, label), el('div', { class: 'low' }, sub)));
+      radio.addEventListener('change', () => {
+        choice.videoId = value;
+        choice.match = value ? suggestMatch(r.lives.find(v => v.videoId === value).title) : '';
+        $('#f-match').value = choice.match;
+      });
+      return row;
+    };
+    if (r.lives.length > 1) streams.append(opt('Whatever it has live (the most watched)', 'Follows the channel as its streams change', ''));
+    for (const v of r.lives) {
+      const sub = [v.viewers ? v.viewers.toLocaleString() + ' watching' : '', v.embeddable ? 'embeddable' : 'NOT embeddable',
+                   v.ageRestricted ? 'age-restricted (app only)' : '', v.regionsBlocked.length ? 'blocked in ' + v.regionsBlocked.join(', ') : '',
+                   v.regionsAllowed.length ? 'only in ' + v.regionsAllowed.join(', ') : ''].filter(Boolean).join(' · ');
+      streams.append(r.lives.length > 1 ? opt(v.title, sub, v.videoId, el('img', { src: v.thumb, alt: '' }))
+        : el('div', { class: 'stream' }, el('img', { src: v.thumb, alt: '' }), el('div', { class: 't' }, el('div', {}, v.title), el('div', { class: 'low' }, sub))));
+    }
+    box.append(el('h2', {}, r.lives.length > 1 ? 'Live now - which should it show?' : 'Live now'), streams);
+  }
+  if (r.upcoming.length) {
+    box.append(el('h2', {}, 'Coming up'));
+    for (const u of r.upcoming) box.append(el('div', { class: 'low' }, new Date(u.scheduled).toLocaleString() + ' - ' + u.title));
+  }
+
+  // The entry
+  const cats = el('select', { id: 'f-cat' }, ...curated.categories.map(c => el('option', { value: c.id }, c.name)), el('option', { value: '__new' }, 'New category…'));
+  cats.addEventListener('change', () => { if (cats.value === '__new') { const id = addCategory(); renderResult(); if (id) $('#f-cat').value = id; } });
+  box.append(el('h2', {}, 'Add it'),
+    el('div', { class: 'grid' },
+      el('label', {}, 'Name in the apps', el('input', { id: 'f-name', value: ch.title })),
+      el('label', {}, 'Category', cats),
+      el('label', {}, 'Country (2 letters, optional)', el('input', { id: 'f-country', value: ch.country, maxlength: 2 })),
+      el('label', {}, 'Language (optional)', el('input', { id: 'f-lang', value: (ch.language || '').slice(0, 2) })),
+      el('label', {}, 'Stream title must have (optional)', el('input', { id: 'f-match', value: '', placeholder: 'e.g. sleep' })),
+      el('label', {}, 'Id (never changes once published)', el('input', { id: 'f-id', value: r.suggestId }))),
+    el('div', { class: 'row', style: 'margin-top:14px' },
+      el('button', { class: 'primary', onclick: () => addIt(choice) }, r.inList.length ? 'Add another entry for it' : 'Add to the list'),
+      el('button', { onclick: () => { box.classList.add('hidden'); $('#link').value = ''; } }, 'Cancel')));
+}
+// A stream's title, cut to the words that pick it out (the first few, emoji and punctuation dropped)
+function suggestMatch(title) {
+  return title.replace(/[^\p{L}\p{N}\s/&'-]/gu, ' ').replace(/\s+/g, ' ').trim().split(' ').slice(0, 4).join(' ');
+}
+async function addIt(choice) {
+  const r = result, ch = r.channel;
+  const id = $('#f-id').value.trim().toLowerCase();
+  const name = $('#f-name').value.trim();
+  const category = $('#f-cat').value;
+  if (!name || !id || category === '__new') { msg('#checkmsg', 'It needs a name, an id and a category.'); return; }
+  if (curated.channels.some(c => c.id === id)) { msg('#checkmsg', `There's already a channel with the id ${id}.`); return; }
+  const entry = { id, name, handle: ch.handle || undefined, channelId: ch.id, category };
+  const country = $('#f-country').value.trim().toUpperCase(), lang = $('#f-lang').value.trim().toLowerCase();
+  if (country) entry.country = country;
+  if (lang) entry.language = lang;
+  const match = $('#f-match').value.trim();
+  if (match) entry.match = match.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  if (choice.videoId) entry.videoId = choice.videoId;
+  // After the last of its category, so the categories stay together
+  const lastInCat = curated.channels.map(c => c.category).lastIndexOf(category);
+  curated.channels.splice(lastInCat < 0 ? curated.channels.length : lastInCat + 1, 0, JSON.parse(JSON.stringify(entry)));
+  await save();
+  $('#result').classList.add('hidden');
+  $('#link').value = '';
+  msg('#checkmsg', `${name} added. Publish when you're done.`, 'okmsg');
+}
+
+// ── Buttons ──
+$('#check').addEventListener('click', doCheck);
+$('#link').addEventListener('keydown', e => { if (e.key === 'Enter') doCheck(); });
+$('#savekey').addEventListener('click', async () => {
+  const r = await post('/api/key', { key: $('#key').value });
+  if (!r.ok) { msg('#keymsg', r.error); return; }
+  $('#key').value = '';
+  load();
+});
+$('#publish').addEventListener('click', async () => {
+  const message = prompt('What changed? (goes in the repo history)', 'Channels updated');
+  if (message === null) return;
+  $('#publish').disabled = true; $('#publish').textContent = 'Publishing…';
+  const r = await post('/api/publish', { message });
+  $('#publish').textContent = 'Publish';
+  msg('#pubmsg', r.ok ? r.message : r.error, r.ok ? 'okmsg' : 'err');
+  load();
+});
+$('#discard').addEventListener('click', async () => {
+  if (!confirm('Throw away everything changed since the last Publish?')) return;
+  await post('/api/revert');
+  load();
+});
+load();
+</script>
+</body>
+</html>
