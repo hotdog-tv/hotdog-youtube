@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-11-18T08:36:03Z",
+ "updated": "2026-11-18T11:48:33Z",
  "attribution": "Channel and programme information from YouTube",
  "terms": {
   "youtube": "https://www.youtube.com/t/terms",
@@ -40,9 +40,19 @@
    "country": "GB",
    "language": "en",
    "ytChannelId": "UCoMdktPbSTixAyNGwb-UYkQ",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/dGnkztdrLtXRlzkdqReeL-NES2761xxmNVcJhGKqFpR0vQBoP9XaxnXF95FDpwrjyFr2iJvV8Es=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCoMdktPbSTixAyNGwb-UYkQ/live",
-   "live": null,
+   "live": {
+    "videoId": "53SxFKpbKDE",
+    "title": "Watch Sky News live",
+    "since": "2026-10-28T08:10:52Z",
+    "viewers": 7672,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/53SxFKpbKDE/maxresdefault.jpg?v=6ae1adaa"
+   },
    "upcoming": []
   },
   {
@@ -52,9 +62,21 @@
    "country": "QA",
    "language": "en",
    "ytChannelId": "UCNye-wNBqNL5ZzHSJj3l8Bg",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/XsTga3Nsfc1E6ZgC6HfHfzTG_3zhuZleOnsKxSK2aILMjwkkIm-0vdALFaU-yt0Lw07iLtbSifk=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCNye-wNBqNL5ZzHSJj3l8Bg/live",
-   "live": null,
+   "live": {
+    "videoId": "gCNeDWCI0vo",
+    "title": "🔴 Al Jazeera English | Live",
+    "since": "2023-03-10T00:37:12Z",
+    "viewers": 9600,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [
+     "IL"
+    ],
+    "thumb": "https://i.ytimg.com/vi/gCNeDWCI0vo/maxresdefault.jpg?v=640a78c8"
+   },
    "upcoming": []
   },
   {
@@ -64,9 +86,19 @@
    "country": "FR",
    "language": "en",
    "ytChannelId": "UCQfwfsi5VrQ8yKZ-UWmAEFg",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/ytc/AIdro_n_QTJ5-GLGnftQFkb7Kp36W2eBH3H-7ZqTQxzFkkqGrIE=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCQfwfsi5VrQ8yKZ-UWmAEFg/live",
-   "live": null,
+   "live": {
+    "videoId": "HvZt-nh9sGg",
+    "title": "FRANCE 24 English – LIVE – International Breaking News & Top stories - 24/7 stream",
+    "since": "2026-05-27T10:26:21Z",
+    "viewers": 1562,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/HvZt-nh9sGg/maxresdefault.jpg?v=6a15fe65"
+   },
    "upcoming": []
   },
   {
@@ -76,9 +108,19 @@
    "country": "DE",
    "language": "en",
    "ytChannelId": "UCknLrEdhRCp1aegoMqRaCZg",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/NSOdTQTWlqMy8O_j32dx-ftfTCHMOt04Hm7KZ4pfAK6-eQzQSZMWvvss90kG8KQfJ7iNP3phyA=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCknLrEdhRCp1aegoMqRaCZg/live",
-   "live": null,
+   "live": {
+    "videoId": "LuKwFajn37U",
+    "title": "DW News livestream | Headline news from around the world",
+    "since": "2025-03-31T17:50:08Z",
+    "viewers": 433,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/LuKwFajn37U/maxresdefault.jpg?v=67ead53f"
+   },
    "upcoming": []
   },
   {
@@ -88,9 +130,21 @@
    "country": "EU",
    "language": "en",
    "ytChannelId": "UCSrZ3UV4jOidv8ppoVuvW9Q",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/8MyE7rxMBfLZOpYkJVJFm1C8I9jxbceBbOJS9OhrepZMVGxGV-OEJU-UdLOew_qR_l-knETWeu4=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCSrZ3UV4jOidv8ppoVuvW9Q/live",
-   "live": null,
+   "live": {
+    "videoId": "pykpO5kQJ98",
+    "title": "Euronews English Live",
+    "since": "2022-12-12T16:50:08Z",
+    "viewers": 320,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [
+     "TR"
+    ],
+    "thumb": "https://i.ytimg.com/vi/pykpO5kQJ98/maxresdefault.jpg?v=63eb92d4"
+   },
    "upcoming": []
   },
   {
@@ -100,9 +154,19 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UCeY0bbntWzzVIaj2z3QigXg",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/PJj5jtuEOi5UmkFy4IBonj5WcabNcnJAIJe-jZMd1ArwIuVyQxFH_2zryBHwvfv6mJujwRpWDCM=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCeY0bbntWzzVIaj2z3QigXg/live",
-   "live": null,
+   "live": {
+    "videoId": "d407BwnLeVA",
+    "title": "LIVE: NBC News NOW - Nov. 18",
+    "since": "2026-11-18T11:32:25Z",
+    "viewers": 1912,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/d407BwnLeVA/maxresdefault.jpg?v=6afc9cf5"
+   },
    "upcoming": []
   },
   {
@@ -112,9 +176,19 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UC8p1vwvWtl6T73JiExfWs1g",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/ytc/AIdro_niBFv49gSx4rr1afMZU_Pv7SeuPKO2SMHvv0Ar7OKxM4o=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC8p1vwvWtl6T73JiExfWs1g/live",
-   "live": null,
+   "live": {
+    "videoId": "ToNKKYWVQdE",
+    "title": "LIVE: Breaking News and Top Stories on CBS News 24/7",
+    "since": "2026-11-17T23:59:48Z",
+    "viewers": 743,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/ToNKKYWVQdE/maxresdefault.jpg?v=6afcc72e"
+   },
    "upcoming": []
   },
   {
@@ -124,9 +198,19 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UCBi2mrWuNuyYy4gbM6fU18Q",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/GJ8V0NX6NddGh9bf4zED4tsjPjjBK2hdp5FWHMy09pV7sdSkkE3yEhCRSch4waEb9ZavyUrWfw=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCBi2mrWuNuyYy4gbM6fU18Q/live",
-   "live": null,
+   "live": {
+    "videoId": "kyh14T8Oa8M",
+    "title": "LIVE: ABC News Live - Wednesday, November 18",
+    "since": "2026-11-18T10:57:43Z",
+    "viewers": 1429,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/kyh14T8Oa8M/maxresdefault.jpg?v=6af9ffb9"
+   },
    "upcoming": []
   },
   {
@@ -136,9 +220,19 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UCJg9wBPyKMNA5sRDnvzmkdg",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/AqzY5ePezRAQ2136-TbM_88d43JfIovkzztge92WKQ4K_ISfJMFA9yuX0Nw87DLWms4W9r2c3Q=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCJg9wBPyKMNA5sRDnvzmkdg/live",
-   "live": null,
+   "live": {
+    "videoId": "C96oohpWBGw",
+    "title": "LIVE NEWS: LiveNOW FOX 24/7 LIVE STREAM",
+    "since": "2026-03-12T22:53:41Z",
+    "viewers": 1247,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/C96oohpWBGw/maxresdefault.jpg?v=69b34353"
+   },
    "upcoming": []
   },
   {
@@ -148,9 +242,19 @@
    "country": "GB",
    "language": "en",
    "ytChannelId": "UC0vn8ISa4LKMunLbzaXLnOQ",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/8hySIA7Ed6amMiAHJVNsG9oph0zoSlCAffYTmINH3gXJ8vvcToB_xh7uIlKSHA9fBEae3e_yl6I=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC0vn8ISa4LKMunLbzaXLnOQ/live",
-   "live": null,
+   "live": {
+    "videoId": "EDbWwVR7i9Q",
+    "title": "GB News Live: Watch GB News 24/7",
+    "since": "2026-10-12T11:02:06Z",
+    "viewers": 3303,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/EDbWwVR7i9Q/maxresdefault.jpg?v=6accbe08"
+   },
    "upcoming": []
   },
   {
@@ -160,9 +264,19 @@
    "country": "SG",
    "language": "en",
    "ytChannelId": "UC83jt4dlz1Gjl58fzQrrKZg",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/-rE0W1GTFDHNy9pd2pkbItVQM6Jcp_hWwD4pUURoArQ2TvZ1TFernWqXFGJXKIYTN5IQtnxkUA=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC83jt4dlz1Gjl58fzQrrKZg/live",
-   "live": null,
+   "live": {
+    "videoId": "-PWMxjBgr0k",
+    "title": "CNA 24/7 LIVE: Breaking news on Asia and award-winning documentaries and shows",
+    "since": "2026-10-14T11:40:32Z",
+    "viewers": 1059,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/-PWMxjBgr0k/maxresdefault.jpg?v=6acf6a08"
+   },
    "upcoming": []
   },
   {
@@ -172,9 +286,19 @@
    "country": "TR",
    "language": "en",
    "ytChannelId": "UC7fWeaHhqgM4Ry-RMpM2YYw",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/luLQWmGFG4iDC1U_2JlzZ1mquci_sUdfZfFl4eWgBkDpW6tvZT0MEA4c4JebJdi9hCo518q1=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/live",
-   "live": null,
+   "live": {
+    "videoId": "JV5w1MhzcfQ",
+    "title": "LIVE: Watch TRT World",
+    "since": "2026-11-04T18:12:12Z",
+    "viewers": 270,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/JV5w1MhzcfQ/maxresdefault.jpg?v=6aeb74a5"
+   },
    "upcoming": []
   },
   {
@@ -184,10 +308,27 @@
    "country": "IN",
    "language": "en",
    "ytChannelId": "UC_gUM8rL-Lrg6O3adPW9K1g",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/evxeFzRem76hjPRh_S_B5MvjNhl4yKjSrIzmvwFx3nyEWHBOPHA4jTum6Yys3HRR0IvYmWud=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC_gUM8rL-Lrg6O3adPW9K1g/live",
-   "live": null,
-   "upcoming": []
+   "live": {
+    "videoId": "vfszY1JYbMc",
+    "title": "WION LIVE News | World Latest English News | International News | Top English News | Live",
+    "since": "2025-07-30T04:03:26Z",
+    "viewers": 335,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/vfszY1JYbMc/maxresdefault.jpg?v=68899881"
+   },
+   "upcoming": [
+    {
+     "videoId": "9pK_RG_3nwo",
+     "title": "APEC Summit 2026 LIVE: Xi Jinping Hosts Gala Dinner for World Leaders in Shenzhen | WION",
+     "start": "2026-11-18T11:32:06Z",
+     "embeddable": true
+    }
+   ]
   },
   {
    "id": "nhk-world-japan",
@@ -196,9 +337,19 @@
    "country": "JP",
    "language": "en",
    "ytChannelId": "UCSPEjw8F2nQDtmUKPFNF7_A",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/ytc/AIdro_m9YDtPWqgZW91_-QTdsVWLbnR0ZQ1BaHX38ZcSRVGnfd0=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live",
-   "live": null,
+   "live": {
+    "videoId": "IimtbuqYIE8",
+    "title": "LIVE: NHK WORLD-JAPAN News",
+    "since": "2026-09-02T05:10:50Z",
+    "viewers": 41,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/IimtbuqYIE8/maxresdefault.jpg?v=6af57ded"
+   },
    "upcoming": []
   },
   {
@@ -208,9 +359,19 @@
    "country": "AU",
    "language": "en",
    "ytChannelId": "UCVgO39Bk5sMo66-6o6Spn6Q",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/sc9xa2bYk6pIuKX3qgMHSrxEkuPmg57JMl_lRaJqCZxuSIeQt1B6BV23c-16Q3b7Aep0on1b=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCVgO39Bk5sMo66-6o6Spn6Q/live",
-   "live": null,
+   "live": {
+    "videoId": "vOTiJkg1voo",
+    "title": "Watch ABC NEWS Australia live | ABC NEWS",
+    "since": "2022-02-20T00:57:03Z",
+    "viewers": 1179,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/vOTiJkg1voo/maxresdefault.jpg?v=66d66096"
+   },
    "upcoming": []
   },
   {
@@ -220,7 +381,7 @@
    "country": "AU",
    "language": "en",
    "ytChannelId": "UCIYLOcEUX6TbBo7HQVF2PKA",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/JzqNSa2-xwC-09jtp9rtHO13iGSWOp1WlzVcXjOluJFUWpz2C_g8VyGZuFdzXWWnnj_ZhUZj=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCIYLOcEUX6TbBo7HQVF2PKA/live",
    "live": null,
    "upcoming": []
@@ -232,10 +393,33 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UCLA_DiR1FfKNvjuUpBHmylQ",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/eIf5fNPcIcj9ig-wZBeq4stFy1lgjWTW1nLT5dYlFkHZprZ03QBiMcbpwNMB6XSBjrSFGtAGQg=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ/live",
-   "live": null,
-   "upcoming": []
+   "live": {
+    "videoId": "ROboUHfPUrU",
+    "title": "Live High-Definition Views from the International Space Station (Official NASA Stream)",
+    "since": "2026-10-22T14:57:23Z",
+    "viewers": 131,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/ROboUHfPUrU/maxresdefault.jpg?v=6ada1dd8"
+   },
+   "upcoming": [
+    {
+     "videoId": "fTDvp9CBXoQ",
+     "title": "NASA's SpaceX 35th Commercial Resupply Services Undocking",
+     "start": "2026-11-18T15:45:00Z",
+     "embeddable": true
+    },
+    {
+     "videoId": "oPgE-ECuJEs",
+     "title": "Voyager 1 Light-Day Mission Update and Conversation",
+     "start": "2026-11-19T17:00:00Z",
+     "embeddable": true
+    }
+   ]
   },
   {
    "id": "sen-earth-from-space",
@@ -244,9 +428,19 @@
    "country": "",
    "language": "en",
    "ytChannelId": "UCkvW_7kp9LJrztmgA4q4bJQ",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/Uw3qkgJffPHEfcLYV_H-dOJOoyaSYSJmQQAsk3_zOdLfWpN73w-aOBI6sZLteSw8vlWhA12R=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCkvW_7kp9LJrztmgA4q4bJQ/live",
-   "live": null,
+   "live": {
+    "videoId": "fO9e9jnhYK8",
+    "title": "Live 4K video of Earth and space: 24/7 Livestream of Earth by Sen’s 4K video cameras on the ISS",
+    "since": "2025-01-24T17:00:18Z",
+    "viewers": 315,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/fO9e9jnhYK8/maxresdefault.jpg?v=6ad219f0"
+   },
    "upcoming": []
   },
   {
@@ -256,9 +450,19 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UC-2KSeUU5SMCX6XLRD-AEvw",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/ytc/AIdro_njJhFIyFuOAL-5sOx1CRsBjTDVLm1nGPOxO6J5ADU-fSc=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC-2KSeUU5SMCX6XLRD-AEvw/live",
-   "live": null,
+   "live": {
+    "videoId": "J7ZrIDvqlic",
+    "title": "LIVE Brooks Falls - Katmai National Park, Alaska 2026 | explore.org",
+    "since": "2026-06-22T20:13:57Z",
+    "viewers": 284,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/J7ZrIDvqlic/maxresdefault.jpg?v=6a39949b"
+   },
    "upcoming": []
   },
   {
@@ -268,9 +472,19 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UCZXZQxS3d6NpR-eH_gdDwYA",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/qPy0OzUrRaIw6AKjzZpgrWjfe1sESn3WemgepVP-pZG_FyEAoq0sUDqDxIDejELgedIxr_5A=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCZXZQxS3d6NpR-eH_gdDwYA/live",
-   "live": null,
+   "live": {
+    "videoId": "x10vL6_47Dw",
+    "title": "🔴 Live Cornell Lab FeederWatch Cam 🔴 at Sapsucker Woods",
+    "since": "2023-06-27T10:44:37Z",
+    "viewers": 313,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/x10vL6_47Dw/maxresdefault.jpg?v=65f45f2b"
+   },
    "upcoming": []
   },
   {
@@ -280,9 +494,19 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UCnM5iMGiKsZg-iOlIO2ZkdQ",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/QQzt4UB9VlT5zHh_PgEFlfYohvaps1_ZlPLcutwDI3A3koJgZsH-rFRFqJ81N3M45UDKsdL9yg=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCnM5iMGiKsZg-iOlIO2ZkdQ/live",
-   "live": null,
+   "live": {
+    "videoId": "eQ_foBERmzA",
+    "title": "Live Jelly Cam | Monterey Bay Aquarium",
+    "since": "2026-07-18T20:42:46Z",
+    "viewers": 116,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/eQ_foBERmzA/maxresdefault.jpg?v=6a5be52c"
+   },
    "upcoming": []
   },
   {
@@ -292,9 +516,19 @@
    "country": "",
    "language": "en",
    "ytChannelId": "UCSJ4gkVC6NrvII8umztf0Ow",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/REcZL_LGu0DaDaC-G7VIbN0uE_5l-i_dw6ZvOETRnY3pRhUmfkOq6C1MLephPZkV4VSzQAhEi_4=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow/live",
-   "live": null,
+   "live": {
+    "videoId": "rFZHOHl-L8A",
+    "title": "lofi hip hop radio 📚 beats to relax/study to",
+    "since": "2026-08-19T07:43:43Z",
+    "viewers": 13623,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/rFZHOHl-L8A/maxresdefault.jpg?v=6ad62bed"
+   },
    "upcoming": []
   },
   {
@@ -304,9 +538,19 @@
    "country": "",
    "language": "en",
    "ytChannelId": "UCSJ4gkVC6NrvII8umztf0Ow",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/REcZL_LGu0DaDaC-G7VIbN0uE_5l-i_dw6ZvOETRnY3pRhUmfkOq6C1MLephPZkV4VSzQAhEi_4=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow/live",
-   "live": null,
+   "live": {
+    "videoId": "JD-kMIpDfnY",
+    "title": "lofi hip hop radio 💤 beats to sleep/chill to",
+    "since": "2026-05-21T15:45:56Z",
+    "viewers": 2573,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/JD-kMIpDfnY/maxresdefault.jpg?v=6ad62daa"
+   },
    "upcoming": []
   },
   {
@@ -316,9 +560,19 @@
    "country": "",
    "language": "en",
    "ytChannelId": "UCSJ4gkVC6NrvII8umztf0Ow",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/REcZL_LGu0DaDaC-G7VIbN0uE_5l-i_dw6ZvOETRnY3pRhUmfkOq6C1MLephPZkV4VSzQAhEi_4=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow/live",
-   "live": null,
+   "live": {
+    "videoId": "4xDzrJKXOOY",
+    "title": "synthwave radio 🌌 beats to chill/game to",
+    "since": "2023-07-02T21:30:22Z",
+    "viewers": 1675,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/4xDzrJKXOOY/maxresdefault.jpg?v=698f87d4"
+   },
    "upcoming": []
   },
   {
@@ -328,9 +582,19 @@
    "country": "",
    "language": "en",
    "ytChannelId": "UCOxqgCwgOqC2lMqC5PYz_Dg",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/5sz00tGeNdll17IqVECF7s7shUzz0nlirAK86WgY0yz7-4t2S51_XMvjM7HaJfdwNlM6rm_Hrg=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCOxqgCwgOqC2lMqC5PYz_Dg/live",
-   "live": null,
+   "live": {
+    "videoId": "5yx6BWlEVcY",
+    "title": "Chillhop Radio - jazzy & lofi hip hop beats 🐾",
+    "since": "2020-03-21T13:22:51Z",
+    "viewers": 509,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/5yx6BWlEVcY/maxresdefault.jpg?v=69ce2d4d"
+   },
    "upcoming": []
   },
   {
@@ -340,9 +604,19 @@
    "country": "JP",
    "language": "",
    "ytChannelId": "UCJhjE7wbdYAae1G25m0tHAA",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/ytc/AIdro_nrs6F_WGx11R1J9rjfsjgDnUJPb0F38JzM1g70q7JLCls=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCJhjE7wbdYAae1G25m0tHAA/live",
-   "live": null,
+   "live": {
+    "videoId": "Dx5qFachd3A",
+    "title": "Relaxing Jazz Piano Radio - Slow Jazz Music - 24/7 Live Stream - Music For Work & Study",
+    "since": "2019-01-15T15:20:16Z",
+    "viewers": 1151,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/Dx5qFachd3A/maxresdefault.jpg?v=5dae1cec"
+   },
    "upcoming": []
   },
   {
@@ -352,9 +626,19 @@
    "country": "US",
    "language": "en",
    "ytChannelId": "UCOIkT9bq-1N2BvrsBjhNlag",
-   "logo": "",
+   "logo": "https://yt3.ggpht.com/k3UvBHoJz9vNraAcj2nYTAKSDEPDVqNlJasWlindYoB4Xj-yr0aI-uN6qxOYHWvajA7dB5auOA=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UCOIkT9bq-1N2BvrsBjhNlag/live",
-   "live": null,
+   "live": {
+    "videoId": "7xdHH9KMSVk",
+    "title": "Flagstaff, Arizona, USA | LIVE Train Camera (PTZ)",
+    "since": "2024-05-22T13:31:52Z",
+    "viewers": 196,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/7xdHH9KMSVk/maxresdefault.jpg?v=69780221"
+   },
    "upcoming": []
   }
  ]
