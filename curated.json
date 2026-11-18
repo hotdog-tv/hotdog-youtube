@@ -1,44 +1,30 @@
 {
   "categories": [
-    { "id": "news", "name": "News" },
-    { "id": "australia", "name": "Australia" },
-    { "id": "space", "name": "Space & Science" },
+    { "id": "christmas", "name": "Christmas" },
+    { "id": "cams", "name": "Trains & Cams" },
     { "id": "nature", "name": "Nature & Animals" },
-    { "id": "music", "name": "Music & Chill" },
-    { "id": "cams", "name": "Trains & Cams" }
+    { "id": "space", "name": "Space & Science" }
   ],
   "channels": [
-    { "id": "sky-news", "name": "Sky News", "handle": "@SkyNews", "channelId": "UCoMdktPbSTixAyNGwb-UYkQ", "category": "news", "country": "GB", "language": "en" },
-    { "id": "al-jazeera-english", "name": "Al Jazeera English", "handle": "@aljazeeraenglish", "channelId": "UCNye-wNBqNL5ZzHSJj3l8Bg", "category": "news", "country": "QA", "language": "en" },
-    { "id": "france-24-english", "name": "France 24 English", "handle": "@France24_en", "channelId": "UCQfwfsi5VrQ8yKZ-UWmAEFg", "category": "news", "country": "FR", "language": "en" },
-    { "id": "dw-news", "name": "DW News", "handle": "@dwnews", "channelId": "UCknLrEdhRCp1aegoMqRaCZg", "category": "news", "country": "DE", "language": "en" },
-    { "id": "euronews", "name": "euronews", "handle": "@euronews", "channelId": "UCSrZ3UV4jOidv8ppoVuvW9Q", "category": "news", "country": "EU", "language": "en" },
-    { "id": "nbc-news-now", "name": "NBC News NOW", "handle": "@NBCNews", "channelId": "UCeY0bbntWzzVIaj2z3QigXg", "category": "news", "country": "US", "language": "en" },
-    { "id": "cbs-news", "name": "CBS News 24/7", "handle": "@CBSNews", "channelId": "UC8p1vwvWtl6T73JiExfWs1g", "category": "news", "country": "US", "language": "en" },
-    { "id": "abc-news-live", "name": "ABC News Live", "handle": "@ABCNews", "channelId": "UCBi2mrWuNuyYy4gbM6fU18Q", "category": "news", "country": "US", "language": "en" },
-    { "id": "livenow-fox", "name": "LiveNOW from FOX", "handle": "@LiveNOWFOX", "channelId": "UCJg9wBPyKMNA5sRDnvzmkdg", "category": "news", "country": "US", "language": "en" },
-    { "id": "gb-news", "name": "GB News", "handle": "@GBNewsOnline", "channelId": "UC0vn8ISa4LKMunLbzaXLnOQ", "category": "news", "country": "GB", "language": "en" },
-    { "id": "cna", "name": "CNA", "handle": "@channelnewsasia", "channelId": "UC83jt4dlz1Gjl58fzQrrKZg", "category": "news", "country": "SG", "language": "en" },
-    { "id": "trt-world", "name": "TRT World", "handle": "@TRTWorld", "channelId": "UC7fWeaHhqgM4Ry-RMpM2YYw", "category": "news", "country": "TR", "language": "en" },
-    { "id": "wion", "name": "WION", "handle": "@WION", "channelId": "UC_gUM8rL-Lrg6O3adPW9K1g", "category": "news", "country": "IN", "language": "en" },
-    { "id": "nhk-world-japan", "name": "NHK WORLD-JAPAN", "handle": "@NHKWORLDJAPAN", "channelId": "UCSPEjw8F2nQDtmUKPFNF7_A", "category": "news", "country": "JP", "language": "en" },
+    { "id": "santa-claus-village", "name": "Santa Claus Village", "handle": "@cityofrovaniemi", "channelId": "UCuarPSgSklrmX2z0iA-Ua4Q", "category": "christmas", "country": "FI" },
+    { "id": "new-york-christmas-night-parade", "name": "New York Christmas Night Parade", "handle": "@festivalwonders", "channelId": "UCMl5yMYMcUbietBmbffXj9w", "category": "christmas", "country": "US" },
+    { "id": "levi-ski-resort-5", "name": "Levi Ski Resort - Lifts 13 & 14", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "christmas", "country": "FI", "match": "Levi Ski Resort - Lifts 13 & 14", "videoId": "hWN0iCg8pDY" },
 
-    { "id": "abc-news-australia", "name": "ABC News Australia", "handle": "@abcnewsaustralia", "channelId": "UCVgO39Bk5sMo66-6o6Spn6Q", "category": "australia", "country": "AU", "language": "en" },
-    { "id": "9-news-australia", "name": "9 News Australia", "handle": "@9NewsAUS", "channelId": "UCIYLOcEUX6TbBo7HQVF2PKA", "category": "australia", "country": "AU", "language": "en" },
-
-    { "id": "nasa", "name": "NASA", "handle": "@NASA", "channelId": "UCLA_DiR1FfKNvjuUpBHmylQ", "category": "space", "country": "US", "language": "en" },
-    { "id": "sen-earth-from-space", "name": "Sen - Earth from Space", "handle": "@sen", "channelId": "UCkvW_7kp9LJrztmgA4q4bJQ", "category": "space", "language": "en" },
+    { "id": "virtual-railfan", "name": "Virtual Railfan", "handle": "@VirtualRailfan", "channelId": "UCOIkT9bq-1N2BvrsBjhNlag", "category": "cams", "country": "US", "language": "en" },
+    { "id": "levi-ski-resort-9", "name": "Levi Ski Resort - Zero Point", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "cams", "country": "FI", "match": "Levi Ski Resort - Zero Point", "videoId": "LwihxyJ4V20" },
+    { "id": "levi-ski-resort-6", "name": "Levi Ski Resort - Village View", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "cams", "country": "FI", "match": "Levi Ski Resort - Village View", "videoId": "X7tdyNFpp1g" },
+    { "id": "levi-ski-resort-1", "name": "Levi Ski Resort - Top of Levi", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "cams", "country": "FI", "videoId": "eXDCi75TjM8", "match": "Levi Ski Resort - Top of Levi" },
+    { "id": "levi-ski-resort-2", "name": "Levi Ski Resort - Adventure Park", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "cams", "country": "FI", "match": "Levi Ski Resort - Adventure Park", "videoId": "ucfAqkh8c50" },
+    { "id": "levi-ski-resort-3", "name": "Levi Ski Resort - Levi West Chairlift", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "cams", "country": "FI", "match": "Levi Ski Resort - Levi West Chairlift", "videoId": "jQrqWYe5Cn4" },
+    { "id": "levi-ski-resort-4", "name": "Levi Ski Resort - Glacier Express", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "cams", "country": "FI", "match": "Levi Ski Resort - Glacier Express", "videoId": "Wr9b5aYA4mI" },
+    { "id": "levi-ski-resort-7", "name": "Levi Ski Resort - Gondoli Lower Station", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "cams", "country": "FI", "match": "Levi Ski Resort - Gondoli Lower Station", "videoId": "gehi4YiVYdY" },
+    { "id": "levi-ski-resort-8", "name": "Levi Ski Resort - South Point", "handle": "@leviskiresort", "channelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw", "category": "cams", "country": "FI", "match": "Levi Ski Resort - South Point", "videoId": "89vRm9bb9_c" },
 
     { "id": "explore-nature-cams", "name": "Explore Nature Cams", "handle": "@ExploreLiveNatureCams", "channelId": "UC-2KSeUU5SMCX6XLRD-AEvw", "category": "nature", "country": "US", "language": "en" },
     { "id": "cornell-bird-cams", "name": "Cornell Lab Bird Cams", "handle": "@cornellbirdcams", "channelId": "UCZXZQxS3d6NpR-eH_gdDwYA", "category": "nature", "country": "US", "language": "en" },
     { "id": "monterey-bay-aquarium", "name": "Monterey Bay Aquarium", "handle": "@MontereyBayAquarium", "channelId": "UCnM5iMGiKsZg-iOlIO2ZkdQ", "category": "nature", "country": "US", "language": "en" },
 
-    { "id": "lofi-girl", "name": "Lofi Girl", "handle": "@LofiGirl", "channelId": "UCSJ4gkVC6NrvII8umztf0Ow", "category": "music", "match": "relax|study", "language": "en" },
-    { "id": "lofi-girl-sleep", "name": "Lofi Girl - Sleep", "handle": "@LofiGirl", "channelId": "UCSJ4gkVC6NrvII8umztf0Ow", "category": "music", "match": "sleep", "language": "en" },
-    { "id": "lofi-girl-synthwave", "name": "Lofi Girl - Synthwave", "handle": "@LofiGirl", "channelId": "UCSJ4gkVC6NrvII8umztf0Ow", "category": "music", "match": "synthwave", "language": "en" },
-    { "id": "chillhop-radio", "name": "Chillhop Radio", "handle": "@ChillhopMusic", "channelId": "UCOxqgCwgOqC2lMqC5PYz_Dg", "category": "music", "language": "en" },
-    { "id": "cafe-music-bgm", "name": "Cafe Music BGM", "handle": "@CafeMusicBGMchannel", "channelId": "UCJhjE7wbdYAae1G25m0tHAA", "category": "music", "country": "JP" },
-
-    { "id": "virtual-railfan", "name": "Virtual Railfan", "handle": "@VirtualRailfan", "channelId": "UCOIkT9bq-1N2BvrsBjhNlag", "category": "cams", "country": "US", "language": "en" }
+    { "id": "nasa", "name": "NASA", "handle": "@NASA", "channelId": "UCLA_DiR1FfKNvjuUpBHmylQ", "category": "space", "country": "US", "language": "en" },
+    { "id": "sen-earth-from-space", "name": "Sen - Earth from Space", "handle": "@sen", "channelId": "UCkvW_7kp9LJrztmgA4q4bJQ", "category": "space", "language": "en" }
   ]
 }
