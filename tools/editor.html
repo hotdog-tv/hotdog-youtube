@@ -134,11 +134,16 @@ function renderList() {
   const box = $('#list');
   box.replaceChildren();
   const catOptions = curated.categories.map(c => [c.id, c.name]);
-  for (const cat of curated.categories) {
+  curated.categories.forEach((cat, ci) => {
     const chans = curated.channels.filter(c => c.category === cat.id);
     const head = el('div', { class: 'row', style: 'justify-content:space-between' },
       el('h2', { style: 'margin:0' }, cat.name + ' · ' + chans.length),
       el('span', {},
+        // The apps list the categories in this order
+        el('button', { class: 'small', disabled: ci === 0, title: 'Move category up', onclick: () => moveCategory(ci, -1) }, '▲'),
+        ' ',
+        el('button', { class: 'small', disabled: ci === curated.categories.length - 1, title: 'Move category down', onclick: () => moveCategory(ci, 1) }, '▼'),
+        ' ',
         el('button', { class: 'small', onclick: () => renameCategory(cat) }, 'Rename'),
         ' ',
         chans.length === 0 ? el('button', { class: 'small danger', onclick: () => removeCategory(cat) }, 'Remove category') : null));
@@ -170,8 +175,19 @@ function renderList() {
       if (editing === c.id) sec.append(editor(c));
     }
     box.append(sec);
-  }
+  });
   box.append(el('div', { style: 'margin-top:16px' }, el('button', { class: 'small', onclick: addCategory }, '+ New category')));
+}
+// A category up (-1) or down (+1); its channels move with it in the file, so it stays grouped
+function moveCategory(i, delta) {
+  const cats = curated.categories, j = i + delta;
+  if (j < 0 || j >= cats.length) return;
+  [cats[i], cats[j]] = [cats[j], cats[i]];
+  const order = new Map(cats.map((c, n) => [c.id, n]));
+  curated.channels = curated.channels.map((c, n) => [c, n])
+    .sort((a, b) => (order.get(a[0].category) ?? 1e9) - (order.get(b[0].category) ?? 1e9) || a[1] - b[1])
+    .map(x => x[0]);
+  save();
 }
 // Every field of a channel's entry (empty = left out)
 let editing = null;
