@@ -327,10 +327,13 @@ function renderResult() {
       el('button', { class: 'primary', onclick: () => addIt(choice) }, r.inList.length ? 'Add another entry for it' : 'Add to the list'),
       el('button', { onclick: () => { box.classList.add('hidden'); $('#link').value = ''; } }, 'Cancel')));
 }
-// A stream's title, cut to the words that pick it out (the first few, emoji and punctuation dropped)
+// A stream's title, cut to the part that picks it out: its first part before " | " or " - " (the rest
+// is usually the channel's name, the same on every one of its streams), emoji and punctuation dropped
 function suggestMatch(title) {
-  return title.replace(/[^\p{L}\p{N}\s/&'-]/gu, ' ').replace(/\s+/g, ' ').trim().split(' ').slice(0, 4).join(' ');
+  const first = title.split(/\s[|•·–—-]\s/)[0] || title;
+  return first.replace(/[^\p{L}\p{N}\s/&'-]/gu, ' ').replace(/\s+/g, ' ').trim().split(' ').slice(0, 5).join(' ');
 }
+const escapeRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 async function addIt(choice) {
   const r = result, ch = r.channel;
   const id = $('#f-id').value.trim().toLowerCase();
@@ -343,7 +346,16 @@ async function addIt(choice) {
   if (country) entry.country = country;
   if (lang) entry.language = lang;
   const match = $('#f-match').value.trim();
-  if (match) entry.match = match.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // A title filter has to fit the stream picked (or one of those live): otherwise the job finds nothing
+  if (match) {
+    const re = new RegExp(escapeRe(match), 'i');
+    const picked = choice.videoId ? r.lives.filter(v => v.videoId === choice.videoId) : r.lives;
+    if (picked.length && !picked.some(v => re.test(v.title))) {
+      msg('#checkmsg', `"Stream title must have" isn't in the ${choice.videoId ? "chosen stream's" : 'live streams\''} title ("${picked[0].title}"). Use words from that title, or leave it empty.`);
+      return;
+    }
+    entry.match = escapeRe(match);
+  }
   if (choice.videoId) entry.videoId = choice.videoId;
   // After the last of its category, so the categories stay together
   const lastInCat = curated.channels.map(c => c.category).lastIndexOf(category);

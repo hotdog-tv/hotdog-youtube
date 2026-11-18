@@ -233,7 +233,14 @@ def refresh_details(quota, channel_ids, state):
 
 
 def pick_live(entry, videos):
-    """The live stream an entry shows: matching its title rules, embeddable first, then most watched."""
+    """
+    The live stream an entry shows: its pinned stream (videoId) while that's live, whatever its
+    title; otherwise one matching its title rules, embeddable first, then most watched.
+    """
+    if entry.get("videoId"):
+        pinned = [(vid, v) for vid, v in videos if vid == entry["videoId"] and v["state"] == "live"]
+        if pinned:
+            return pinned[0]
     match = re.compile(entry["match"], re.I) if entry.get("match") else None
     exclude = re.compile(entry["exclude"], re.I) if entry.get("exclude") else None
     lives = [(vid, v) for vid, v in videos
@@ -379,17 +386,33 @@ def run():
                         lst.append(vid)
                     del lst[:-PLAIN_KEEP]
 
-        asked = list(tracked) + fresh
+        # Pinned streams are always looked at: a 24/7 stream started long ago isn't in the RSS feed
+        pinned = []
+        for e in entries:
+            vid = e.get("videoId")
+            if vid and e.get("channelId") and vid not in tracked and vid not in fresh:
+                pinned.append(vid)
+                owner[vid] = e["channelId"]
+                # (one marked an ordinary upload before is asked about again: a pin says otherwise)
+                lst = plain.get(e["channelId"], [])
+                if vid in lst:
+                    lst.remove(vid)
+        asked = list(tracked) + fresh + list(dict.fromkeys(pinned))
         apply(check_videos(quota, asked), asked)
 
-        # Searches: channels with nothing live (every SEARCH_OFFLINE_H) and every channel now and then
-        live_channels = {v["channelId"] for v in tracked.values() if v["state"] == "live"}
+        # Searches: channels with an entry that has no live stream (every SEARCH_OFFLINE_H), and every
+        # channel now and then (finds extra streams). One live stream doesn't stop the search: a
+        # channel with several cams may have the others on.
+        by_channel = {}
+        for vid, v in tracked.items():
+            by_channel.setdefault(v["channelId"], []).append((vid, v))
+        wanting = {e["channelId"] for e in entries if e.get("channelId") and not pick_live(e, by_channel.get(e["channelId"], []))}
         found_ids = []
         due = []
         for cid in channel_ids:
             last = chans.setdefault(cid, {}).get("searchedAt", 0)
             age_h = (now_s() - last) / 3600
-            if (cid not in live_channels and age_h >= SEARCH_OFFLINE_H) or age_h >= SEARCH_ANY_H:
+            if (cid in wanting and age_h >= SEARCH_OFFLINE_H) or age_h >= SEARCH_ANY_H:
                 due.append((last, cid))
         for _, cid in sorted(due):   # longest since searched first, in case the budget runs out
             try:
