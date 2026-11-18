@@ -1,0 +1,361 @@
+{
+ "schema": 1,
+ "updated": "2026-11-18T08:36:03Z",
+ "attribution": "Channel and programme information from YouTube",
+ "terms": {
+  "youtube": "https://www.youtube.com/t/terms",
+  "googlePrivacy": "https://policies.google.com/privacy"
+ },
+ "categories": [
+  {
+   "id": "news",
+   "name": "News"
+  },
+  {
+   "id": "australia",
+   "name": "Australia"
+  },
+  {
+   "id": "space",
+   "name": "Space & Science"
+  },
+  {
+   "id": "nature",
+   "name": "Nature & Animals"
+  },
+  {
+   "id": "music",
+   "name": "Music & Chill"
+  },
+  {
+   "id": "cams",
+   "name": "Trains & Cams"
+  }
+ ],
+ "channels": [
+  {
+   "id": "sky-news",
+   "name": "Sky News",
+   "category": "news",
+   "country": "GB",
+   "language": "en",
+   "ytChannelId": "UCoMdktPbSTixAyNGwb-UYkQ",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCoMdktPbSTixAyNGwb-UYkQ/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "al-jazeera-english",
+   "name": "Al Jazeera English",
+   "category": "news",
+   "country": "QA",
+   "language": "en",
+   "ytChannelId": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCNye-wNBqNL5ZzHSJj3l8Bg/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "france-24-english",
+   "name": "France 24 English",
+   "category": "news",
+   "country": "FR",
+   "language": "en",
+   "ytChannelId": "UCQfwfsi5VrQ8yKZ-UWmAEFg",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCQfwfsi5VrQ8yKZ-UWmAEFg/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "dw-news",
+   "name": "DW News",
+   "category": "news",
+   "country": "DE",
+   "language": "en",
+   "ytChannelId": "UCknLrEdhRCp1aegoMqRaCZg",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCknLrEdhRCp1aegoMqRaCZg/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "euronews",
+   "name": "euronews",
+   "category": "news",
+   "country": "EU",
+   "language": "en",
+   "ytChannelId": "UCSrZ3UV4jOidv8ppoVuvW9Q",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCSrZ3UV4jOidv8ppoVuvW9Q/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "nbc-news-now",
+   "name": "NBC News NOW",
+   "category": "news",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UCeY0bbntWzzVIaj2z3QigXg",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCeY0bbntWzzVIaj2z3QigXg/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "cbs-news",
+   "name": "CBS News 24/7",
+   "category": "news",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UC8p1vwvWtl6T73JiExfWs1g",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UC8p1vwvWtl6T73JiExfWs1g/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "abc-news-live",
+   "name": "ABC News Live",
+   "category": "news",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UCBi2mrWuNuyYy4gbM6fU18Q",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCBi2mrWuNuyYy4gbM6fU18Q/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "livenow-fox",
+   "name": "LiveNOW from FOX",
+   "category": "news",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UCJg9wBPyKMNA5sRDnvzmkdg",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCJg9wBPyKMNA5sRDnvzmkdg/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "gb-news",
+   "name": "GB News",
+   "category": "news",
+   "country": "GB",
+   "language": "en",
+   "ytChannelId": "UC0vn8ISa4LKMunLbzaXLnOQ",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UC0vn8ISa4LKMunLbzaXLnOQ/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "cna",
+   "name": "CNA",
+   "category": "news",
+   "country": "SG",
+   "language": "en",
+   "ytChannelId": "UC83jt4dlz1Gjl58fzQrrKZg",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UC83jt4dlz1Gjl58fzQrrKZg/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "trt-world",
+   "name": "TRT World",
+   "category": "news",
+   "country": "TR",
+   "language": "en",
+   "ytChannelId": "UC7fWeaHhqgM4Ry-RMpM2YYw",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "wion",
+   "name": "WION",
+   "category": "news",
+   "country": "IN",
+   "language": "en",
+   "ytChannelId": "UC_gUM8rL-Lrg6O3adPW9K1g",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UC_gUM8rL-Lrg6O3adPW9K1g/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "nhk-world-japan",
+   "name": "NHK WORLD-JAPAN",
+   "category": "news",
+   "country": "JP",
+   "language": "en",
+   "ytChannelId": "UCSPEjw8F2nQDtmUKPFNF7_A",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "abc-news-australia",
+   "name": "ABC News Australia",
+   "category": "australia",
+   "country": "AU",
+   "language": "en",
+   "ytChannelId": "UCVgO39Bk5sMo66-6o6Spn6Q",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCVgO39Bk5sMo66-6o6Spn6Q/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "9-news-australia",
+   "name": "9 News Australia",
+   "category": "australia",
+   "country": "AU",
+   "language": "en",
+   "ytChannelId": "UCIYLOcEUX6TbBo7HQVF2PKA",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCIYLOcEUX6TbBo7HQVF2PKA/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "nasa",
+   "name": "NASA",
+   "category": "space",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UCLA_DiR1FfKNvjuUpBHmylQ",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "sen-earth-from-space",
+   "name": "Sen - Earth from Space",
+   "category": "space",
+   "country": "",
+   "language": "en",
+   "ytChannelId": "UCkvW_7kp9LJrztmgA4q4bJQ",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCkvW_7kp9LJrztmgA4q4bJQ/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "explore-nature-cams",
+   "name": "Explore Nature Cams",
+   "category": "nature",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UC-2KSeUU5SMCX6XLRD-AEvw",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UC-2KSeUU5SMCX6XLRD-AEvw/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "cornell-bird-cams",
+   "name": "Cornell Lab Bird Cams",
+   "category": "nature",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UCZXZQxS3d6NpR-eH_gdDwYA",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCZXZQxS3d6NpR-eH_gdDwYA/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "monterey-bay-aquarium",
+   "name": "Monterey Bay Aquarium",
+   "category": "nature",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UCnM5iMGiKsZg-iOlIO2ZkdQ",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCnM5iMGiKsZg-iOlIO2ZkdQ/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "lofi-girl",
+   "name": "Lofi Girl",
+   "category": "music",
+   "country": "",
+   "language": "en",
+   "ytChannelId": "UCSJ4gkVC6NrvII8umztf0Ow",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "lofi-girl-sleep",
+   "name": "Lofi Girl - Sleep",
+   "category": "music",
+   "country": "",
+   "language": "en",
+   "ytChannelId": "UCSJ4gkVC6NrvII8umztf0Ow",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "lofi-girl-synthwave",
+   "name": "Lofi Girl - Synthwave",
+   "category": "music",
+   "country": "",
+   "language": "en",
+   "ytChannelId": "UCSJ4gkVC6NrvII8umztf0Ow",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "chillhop-radio",
+   "name": "Chillhop Radio",
+   "category": "music",
+   "country": "",
+   "language": "en",
+   "ytChannelId": "UCOxqgCwgOqC2lMqC5PYz_Dg",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCOxqgCwgOqC2lMqC5PYz_Dg/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "cafe-music-bgm",
+   "name": "Cafe Music BGM",
+   "category": "music",
+   "country": "JP",
+   "language": "",
+   "ytChannelId": "UCJhjE7wbdYAae1G25m0tHAA",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCJhjE7wbdYAae1G25m0tHAA/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "virtual-railfan",
+   "name": "Virtual Railfan",
+   "category": "cams",
+   "country": "US",
+   "language": "en",
+   "ytChannelId": "UCOIkT9bq-1N2BvrsBjhNlag",
+   "logo": "",
+   "watchUrl": "https://www.youtube.com/channel/UCOIkT9bq-1N2BvrsBjhNlag/live",
+   "live": null,
+   "upcoming": []
+  }
+ ]
+}

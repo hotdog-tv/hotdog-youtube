@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube Live Channels</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg:#0e1116; --panel:#171b22; --text:#e8eaed; --mid:#9aa0a6; --live:#e5484d; --line:#262b33; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.45 system-ui, sans-serif; padding:24px 16px 48px; }
+  main { max-width: 980px; margin: 0 auto; }
+  h1 { font-weight:300; margin:0 0 4px; }
+  .sub { color:var(--mid); margin:0 0 24px; font-size:13px; }
+  h2 { font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--mid); margin:28px 0 8px; }
+  .row { display:flex; gap:12px; align-items:center; background:var(--panel); border-radius:10px; padding:10px 12px; margin-bottom:6px; }
+  .row img { width:40px; height:40px; border-radius:50%; flex:none; background:var(--line); }
+  .name { font-weight:600; }
+  .now { color:var(--mid); font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .grow { flex:1; min-width:0; }
+  .tag { font-size:11px; font-weight:700; padding:2px 7px; border-radius:6px; flex:none; }
+  .on { background:var(--live); color:#fff; }
+  .off { background:var(--line); color:var(--mid); }
+  .warn { background:#5b4a12; color:#f5d77a; }
+  a { color:inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>YouTube Live Channels</h1>
+  <p class="sub" id="sub">Loading…</p>
+  <div id="list"></div>
+  <p class="sub" id="attr"></p>
+</main>
+<script>
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+fetch('channels.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
+  const live = d.channels.filter(c => c.live).length;
+  document.getElementById('sub').textContent =
+    `${d.channels.length} channels, ${live} live now · updated ${new Date(d.updated).toLocaleString()}`;
+  const list = document.getElementById('list');
+  for (const cat of d.categories) {
+    const chans = d.channels.filter(c => c.category === cat.id);
+    if (!chans.length) continue;
+    list.append(el('h2', null, cat.name));
+    for (const c of chans) {
+      const row = el('div', 'row');
+      const img = el('img'); img.alt = ''; img.loading = 'lazy'; if (c.logo) img.src = c.logo;
+      const mid = el('div', 'grow');
+      const name = el('a', 'name', c.name); name.href = c.watchUrl; name.target = '_blank'; name.rel = 'noopener';
+      mid.append(name);
+      const next = c.upcoming && c.upcoming[0];
+      mid.append(el('div', 'now', c.live ? c.live.title
+        : next ? `Next: ${next.title} · ${new Date(next.start).toLocaleString()}` : 'Off air'));
+      row.append(img, mid);
+      if (c.live && !c.live.embeddable) row.append(el('span', 'tag warn', 'NO EMBED'));
+      row.append(el('span', 'tag ' + (c.live ? 'on' : 'off'), c.live ? 'LIVE' : 'OFF'));
+      list.append(row);
+    }
+  }
+  const a = document.getElementById('attr');
+  a.append(d.attribution + ' · ');
+  const t = el('a', null, 'YouTube Terms of Service'); t.href = d.terms.youtube; a.append(t, ' · ');
+  const p = el('a', null, 'Google Privacy Policy'); p.href = d.terms.googlePrivacy; a.append(p);
+}).catch(() => { document.getElementById('sub').textContent = 'The channel list has not been built yet.'; });
+</script>
+</body>
+</html>
