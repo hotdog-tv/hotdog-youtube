@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-11-18T12:45:23Z",
+ "updated": "2026-11-18T13:11:14Z",
  "attribution": "Channel and programme information from YouTube",
  "terms": {
   "youtube": "https://www.youtube.com/t/terms",
@@ -38,12 +38,12 @@
     "videoId": "Cp4RRAEgpeU",
     "title": "Live @ Santa Claus Village",
     "since": "2020-01-29T06:36:37Z",
-    "viewers": 344,
+    "viewers": 322,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
     "regionsBlocked": [],
-    "thumb": "https://i.ytimg.com/vi/Cp4RRAEgpeU/maxresdefault.jpg?v=39d71"
+    "thumb": "https://i.ytimg.com/vi/Cp4RRAEgpeU/maxresdefault.jpg?v=39d76"
    },
    "upcoming": []
   },
@@ -60,7 +60,7 @@
     "videoId": "CcWCIXoNNYY",
     "title": "🔴 LIVE:  🎅🎄 New York Christmas Night Parade 2026 | Magical Holiday Music & Dazzling Festive Floats!",
     "since": "2026-11-07T10:03:20Z",
-    "viewers": 36,
+    "viewers": 34,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -82,7 +82,7 @@
     "videoId": "7xdHH9KMSVk",
     "title": "Flagstaff, Arizona, USA | LIVE Train Camera (PTZ)",
     "since": "2024-05-22T13:31:52Z",
-    "viewers": 340,
+    "viewers": 239,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -100,7 +100,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "LwihxyJ4V20",
+    "title": "Zero Point Levi | Levi Ski Resort | Finland",
+    "since": "2020-11-12T06:51:32Z",
+    "viewers": 563,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/LwihxyJ4V20/maxresdefault.jpg?v=3a38e"
+   },
    "upcoming": []
   },
   {
@@ -112,7 +122,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "X7tdyNFpp1g",
+    "title": "Kylänäkymä / Village view | Levi Ski Resort | Finland",
+    "since": "2022-10-03T05:50:14Z",
+    "viewers": 12,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/X7tdyNFpp1g/maxresdefault.jpg?v=39e70"
+   },
    "upcoming": []
   },
   {
@@ -124,7 +144,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "eXDCi75TjM8",
+    "title": "Näkymä Levin huipulta. View from top of Levi. | Levi Ski Resort | Finland",
+    "since": "2025-06-17T10:33:14Z",
+    "viewers": 2,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/eXDCi75TjM8/maxresdefault.jpg?v=2487f"
+   },
    "upcoming": []
   },
   {
@@ -136,7 +166,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "ucfAqkh8c50",
+    "title": "Levin Seikkailupuisto / Adventure Park Levi | Levi Ski Resort | Finland",
+    "since": "2025-05-14T14:52:17Z",
+    "viewers": 7,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/ucfAqkh8c50/maxresdefault.jpg?v=26e80"
+   },
    "upcoming": []
   },
   {
@@ -148,7 +188,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "hWN0iCg8pDY",
+    "title": "Hissit/Lifts 13 & 14 | Levi Ski Resort | Finland",
+    "since": "2023-02-21T08:58:36Z",
+    "viewers": 5,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/hWN0iCg8pDY/maxresdefault.jpg?v=394ea"
+   },
    "upcoming": []
   },
   {
@@ -160,7 +210,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "jQrqWYe5Cn4",
+    "title": "Levi West tuolihissi / Chairlift | Levi Ski Resort | Finland",
+    "since": "2025-03-13T13:51:22Z",
+    "viewers": 10,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/jQrqWYe5Cn4/maxresdefault.jpg?v=2a82e"
+   },
    "upcoming": []
   },
   {
@@ -172,7 +232,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "Wr9b5aYA4mI",
+    "title": "Levi Glacier Express lift and slopes | Levi Ski Resort | Finland",
+    "since": "2023-09-28T10:17:22Z",
+    "viewers": 72,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/Wr9b5aYA4mI/maxresdefault.jpg?v=3a30f"
+   },
    "upcoming": []
   },
   {
@@ -184,7 +254,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "gehi4YiVYdY",
+    "title": "Gondoli ala-asema/Lower station | Levi Ski Resort | Finland",
+    "since": "2022-07-22T11:37:34Z",
+    "viewers": 41,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/gehi4YiVYdY/maxresdefault.jpg?v=3b052"
+   },
    "upcoming": []
   },
   {
@@ -196,7 +276,17 @@
    "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
    "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
    "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
+   "live": {
+    "videoId": "89vRm9bb9_c",
+    "title": "South Point Levi | Levi Ski Resort | Finland",
+    "since": "2021-02-16T09:06:37Z",
+    "viewers": 67,
+    "embeddable": true,
+    "ageRestricted": false,
+    "regionsAllowed": [],
+    "regionsBlocked": [],
+    "thumb": "https://i.ytimg.com/vi/89vRm9bb9_c/maxresdefault.jpg?v=3ac9f"
+   },
    "upcoming": []
   },
   {
@@ -212,7 +302,7 @@
     "videoId": "J7ZrIDvqlic",
     "title": "LIVE Brooks Falls - Katmai National Park, Alaska 2026 | explore.org",
     "since": "2026-06-22T20:13:57Z",
-    "viewers": 336,
+    "viewers": 363,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -234,7 +324,7 @@
     "videoId": "x10vL6_47Dw",
     "title": "🔴 Live Cornell Lab FeederWatch Cam 🔴 at Sapsucker Woods",
     "since": "2023-06-27T10:44:37Z",
-    "viewers": 627,
+    "viewers": 818,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -256,7 +346,7 @@
     "videoId": "eQ_foBERmzA",
     "title": "Live Jelly Cam | Monterey Bay Aquarium",
     "since": "2026-07-18T20:42:46Z",
-    "viewers": 120,
+    "viewers": 122,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -278,7 +368,7 @@
     "videoId": "ROboUHfPUrU",
     "title": "Live High-Definition Views from the International Space Station (Official NASA Stream)",
     "since": "2026-10-22T14:57:23Z",
-    "viewers": 129,
+    "viewers": 143,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -313,7 +403,7 @@
     "videoId": "fO9e9jnhYK8",
     "title": "Live 4K video of Earth and space: 24/7 Livestream of Earth by Sen’s 4K video cameras on the ISS",
     "since": "2025-01-24T17:00:18Z",
-    "viewers": 307,
+    "viewers": 306,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
