@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-11-18T12:38:08Z",
+ "updated": "2026-11-18T12:45:23Z",
  "attribution": "Channel and programme information from YouTube",
  "terms": {
   "youtube": "https://www.youtube.com/t/terms",
@@ -38,12 +38,12 @@
     "videoId": "Cp4RRAEgpeU",
     "title": "Live @ Santa Claus Village",
     "since": "2020-01-29T06:36:37Z",
-    "viewers": 346,
+    "viewers": 344,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
     "regionsBlocked": [],
-    "thumb": "https://i.ytimg.com/vi/Cp4RRAEgpeU/maxresdefault.jpg?v=39d70"
+    "thumb": "https://i.ytimg.com/vi/Cp4RRAEgpeU/maxresdefault.jpg?v=39d71"
    },
    "upcoming": []
   },
@@ -60,25 +60,13 @@
     "videoId": "CcWCIXoNNYY",
     "title": "🔴 LIVE:  🎅🎄 New York Christmas Night Parade 2026 | Magical Holiday Music & Dazzling Festive Floats!",
     "since": "2026-11-07T10:03:20Z",
-    "viewers": 42,
+    "viewers": 36,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
     "regionsBlocked": [],
     "thumb": "https://i.ytimg.com/vi/CcWCIXoNNYY/maxresdefault.jpg?v=6aeee9a3"
    },
-   "upcoming": []
-  },
-  {
-   "id": "levi-ski-resort-5",
-   "name": "Levi Ski Resort - Lifts 13 & 14",
-   "category": "christmas",
-   "country": "FI",
-   "language": "",
-   "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
-   "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
-   "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
-   "live": null,
    "upcoming": []
   },
   {
@@ -94,7 +82,7 @@
     "videoId": "7xdHH9KMSVk",
     "title": "Flagstaff, Arizona, USA | LIVE Train Camera (PTZ)",
     "since": "2024-05-22T13:31:52Z",
-    "viewers": 302,
+    "viewers": 340,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -142,6 +130,18 @@
   {
    "id": "levi-ski-resort-2",
    "name": "Levi Ski Resort - Adventure Park",
+   "category": "cams",
+   "country": "FI",
+   "language": "",
+   "ytChannelId": "UC1HDQ1Q5nVHYF8e7dL4E-pw",
+   "logo": "https://yt3.ggpht.com/CIxdOTTUbuS1QrtIf-cIq3MtuHBVld33_zIrVIwwLCEiVDXC2yzd2LulAxh2vBiQxbU1pqiEwCo=s800-c-k-c0x00ffffff-no-rj",
+   "watchUrl": "https://www.youtube.com/channel/UC1HDQ1Q5nVHYF8e7dL4E-pw/live",
+   "live": null,
+   "upcoming": []
+  },
+  {
+   "id": "levi-ski-resort-5",
+   "name": "Levi Ski Resort - Lifts 13 & 14",
    "category": "cams",
    "country": "FI",
    "language": "",
@@ -212,7 +212,7 @@
     "videoId": "J7ZrIDvqlic",
     "title": "LIVE Brooks Falls - Katmai National Park, Alaska 2026 | explore.org",
     "since": "2026-06-22T20:13:57Z",
-    "viewers": 338,
+    "viewers": 336,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -234,7 +234,7 @@
     "videoId": "x10vL6_47Dw",
     "title": "🔴 Live Cornell Lab FeederWatch Cam 🔴 at Sapsucker Woods",
     "since": "2023-06-27T10:44:37Z",
-    "viewers": 570,
+    "viewers": 627,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -278,7 +278,7 @@
     "videoId": "ROboUHfPUrU",
     "title": "Live High-Definition Views from the International Space Station (Official NASA Stream)",
     "since": "2026-10-22T14:57:23Z",
-    "viewers": 115,
+    "viewers": 129,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
@@ -313,7 +313,7 @@
     "videoId": "fO9e9jnhYK8",
     "title": "Live 4K video of Earth and space: 24/7 Livestream of Earth by Sen’s 4K video cameras on the ISS",
     "since": "2025-01-24T17:00:18Z",
-    "viewers": 300,
+    "viewers": 307,
     "embeddable": true,
     "ageRestricted": false,
     "regionsAllowed": [],
